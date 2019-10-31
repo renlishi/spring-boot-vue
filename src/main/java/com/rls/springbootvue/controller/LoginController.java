@@ -26,7 +26,7 @@ public class LoginController {
         if (!Objects.equals("admin", username) || !Objects.equals("123456", requestUser.getPassword())) {
             String message = "账号密码错误";
             System.out.println("test");
-            return new Result().error(ResultCode.FAILED, message);
+            return new Result().successData(ResultCode.FAILED, message);
         } else {
             return new Result().success(ResultCode.SUCCESS);
         }
