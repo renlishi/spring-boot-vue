@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class Result {
-    private Integer status;
+    private Integer code;
 
     private String msg;
 
@@ -24,8 +24,8 @@ public class Result {
     public Result() {
     }
 
-    public Result(Integer state, String message, Object data) {
-        this.status = state;
+    public Result(Integer code, String message, Object data) {
+        this.code = code;
         this.msg = message;
         this.data = data;
     }
