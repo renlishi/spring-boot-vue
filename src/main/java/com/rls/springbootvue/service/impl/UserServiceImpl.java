@@ -14,14 +14,11 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
     @Override
     public Result selectByPassWord(String signInName, String passWord) {
-        Result result;
         User user = userDao.selectByPassWord(signInName, passWord);
         if (null == user) {
-            String message = "账号密码错误";
-            result = new Result().successData(ResultCode.FAILED, message);
+            return new Result().success(ResultCode.FAILED);
         } else {
-            result = new Result().success(ResultCode.SUCCESS);
+            return new Result().success(ResultCode.SUCCESS);
         }
-        return result;
     }
 }
