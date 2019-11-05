@@ -11,4 +11,10 @@ public class User {
     String userName;
     /**密码*/
     String passWord;
+    String date;
+    String name;
+    String province;
+    String city;
+    String address;
+    String zip;
 }
