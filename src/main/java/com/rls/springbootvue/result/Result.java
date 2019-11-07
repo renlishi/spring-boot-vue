@@ -18,8 +18,6 @@ public class Result<E> {
     }
 
     private Integer total;
-    private Integer currentPage;
-    private Integer pageSize;
 
     // 几个常用方法
     public Result success(ResultCode ResultCode) {

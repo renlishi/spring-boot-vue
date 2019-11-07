@@ -3,7 +3,7 @@ package com.rls.springbootvue.model;
 import lombok.Data;
 
 @Data
-public class User {
+public class User extends BaseBean{
     int id;
     /**登录名*/
     String signInName;

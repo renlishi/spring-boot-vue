@@ -3,7 +3,7 @@ package com.rls.springbootvue.model;
 import lombok.Data;
 
 @Data
-public class Book {
+public class Book extends BaseBean{
     private Integer id;
     private String cover;
     private String title;
@@ -11,4 +11,5 @@ public class Book {
     private String date;
     private String press;
     private String abs;
+    private String cid;
 }
